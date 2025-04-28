@@ -3,11 +3,11 @@ function use()
 
 	local damageevent = game:GetService("ReplicatedStorage"):WaitForChild("Damage2")
 	local damageevent2 = game.ReplicatedStorage.Damage3
-	task.delay(3, function()
-		game.Players.LocalPlayer.Backpack:FindFirstChild("Standless"):Destroy()
-	end)
+	--task.delay(1, function()
+		game.Players.LocalPlayer.Backpack:FindFirstChild("Standless").Enabled = false
+	--end)
 	
-	wait(3)
+	--wait(1)
 
 	local ButtonUI = Instance.new("ScreenGui")
 	ButtonUI.ResetOnSpawn = true
@@ -239,8 +239,8 @@ function use()
 		human.JumpPower = 0
 		repeat
 			EHMMM = EHMMM + 0.5
-			hito2(rarm, rarm.CFrame * CFrame.new(0, -1, 0) * CFrame.new(math.random(-0.25, 0.25), math.random(-0.25, 0.25), math.random(-0.25, 0.25)) ,3.5, 6.25, 0.05, 0.25, rot.CFrame.lookVector * 2.5, 0.075,"rbxassetid://9122060057", math.random(9, 11) / 10, math.random(9, 11) / 50)
-			hito2(larm, larm.CFrame * CFrame.new(0, -1, 0) * CFrame.new(math.random(-0.25, 0.25), math.random(-0.25, 0.25), math.random(-0.25, 0.25)) ,3.5, 6.25, 0.05, 0.25, rot.CFrame.lookVector * 2.5, 0.075,"rbxassetid://9122060057", math.random(9, 11) / 10, math.random(9, 11) / 50)		
+			hito2(rarm, rarm.CFrame * CFrame.new(0, -1, 0) * CFrame.new(math.random(-0.25, 0.25), math.random(-0.25, 0.25), math.random(-0.25, 0.25)) ,2, 6.25, 0.05, 0.25, rot.CFrame.lookVector * 2.5, 0.075,"rbxassetid://9122060057", math.random(9, 11) / 10, math.random(9, 11) / 50)
+			hito2(larm, larm.CFrame * CFrame.new(0, -1, 0) * CFrame.new(math.random(-0.25, 0.25), math.random(-0.25, 0.25), math.random(-0.25, 0.25)) ,2, 6.25, 0.05, 0.25, rot.CFrame.lookVector * 2.5, 0.075,"rbxassetid://9122060057", math.random(9, 11) / 10, math.random(9, 11) / 50)		
 			wait(0.05)
 		until bep == false or disabled.Value == true or EHMMM >= 40 
 		EHMMM = 0
