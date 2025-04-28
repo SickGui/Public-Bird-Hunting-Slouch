@@ -4,7 +4,7 @@ function use()
 	local damageevent = game:GetService("ReplicatedStorage"):WaitForChild("Damage2")
 	local damageevent2 = game.ReplicatedStorage.Damage3
 	--task.delay(1, function()
-		game.Players.LocalPlayer.Backpack:FindFirstChild("Standless").Enabled = false
+		game.Players.LocalPlayer.Backpack:WaitForChild("Standless").Disabled = true
 	--end)
 	
 	--wait(1)
