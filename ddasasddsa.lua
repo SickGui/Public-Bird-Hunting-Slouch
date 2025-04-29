@@ -1,4 +1,5 @@
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Pixeluted/adoniscries/main/Source.lua",true))()
+_G.DamageB = 12.5
 function use()
 
 
@@ -240,8 +241,8 @@ function use()
 		human.JumpPower = 0
 		repeat
 			EHMMM = EHMMM + 0.5
-			hito2(rarm, rarm.CFrame * CFrame.new(0, -1, 0) * CFrame.new(math.random(-0.25, 0.25), math.random(-0.25, 0.25), math.random(-0.25, 0.25)) ,3.5, 6.25, 0.05, 0.25, rot.CFrame.lookVector * 2.5, 0.075,"rbxassetid://9122060057", math.random(9, 11) / 10, math.random(9, 11) / 50)
-			hito2(larm, larm.CFrame * CFrame.new(0, -1, 0) * CFrame.new(math.random(-0.25, 0.25), math.random(-0.25, 0.25), math.random(-0.25, 0.25)) ,3.5, 6.25, 0.05, 0.25, rot.CFrame.lookVector * 2.5, 0.075,"rbxassetid://9122060057", math.random(9, 11) / 10, math.random(9, 11) / 50)		
+			hito2(rarm, rarm.CFrame * CFrame.new(0, -1, 0) * CFrame.new(math.random(-0.25, 0.25), math.random(-0.25, 0.25), math.random(-0.25, 0.25)) ,3.5, _G.DamageB, 0.05, 0.25, rot.CFrame.lookVector * 2.5, 0.075,"rbxassetid://9122060057", math.random(9, 11) / 10, math.random(9, 11) / 50)
+			hito2(larm, larm.CFrame * CFrame.new(0, -1, 0) * CFrame.new(math.random(-0.25, 0.25), math.random(-0.25, 0.25), math.random(-0.25, 0.25)) ,3.5, _G.DamageB, 0.05, 0.25, rot.CFrame.lookVector * 2.5, 0.075,"rbxassetid://9122060057", math.random(9, 11) / 10, math.random(9, 11) / 50)		
 			wait(0.05)
 		until bep == false or disabled.Value == true or EHMMM >= 40 
 		EHMMM = 0
@@ -310,7 +311,7 @@ function use()
 		coroutine.resume(coroutine.create(function()
 			for _ = 1, 15 do
 				wait()
-				hito3(rarm, rarm.CFrame * CFrame.new(0, -1, 0) * CFrame.new(math.random(-0.25, 0.25), math.random(-0.25, 0.25), math.random(-0.25, 0.25)) ,3, 37.5, 0.75, 0.25, rot.CFrame.lookVector * 50, 0.25,"rbxassetid://9122060057", math.random(9, 11) / 10, math.random(9, 11) / 10)
+				hito3(rarm, rarm.CFrame * CFrame.new(0, -1, 0) * CFrame.new(math.random(-0.25, 0.25), math.random(-0.25, 0.25), math.random(-0.25, 0.25)) ,3, 97.5, 0.75, 0.25, rot.CFrame.lookVector * 50, 0.25,"rbxassetid://9122060057", math.random(9, 11) / 10, math.random(9, 11) / 10)
 			end
 		end))
 		wait(0.65)
