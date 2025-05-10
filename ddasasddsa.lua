@@ -478,6 +478,7 @@ function use()
 		end
 	end)
 
+	blockevent:FireServer(true)
 end
 
 use()
